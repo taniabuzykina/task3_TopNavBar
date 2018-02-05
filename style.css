@@ -99,12 +99,13 @@ input::placeholder{
 }
 
 
-/*???????????????????????????????*/
-/*
-.profile:not(:first-of-type){
-    padding-left: 10px;
+.profile a:first-of-type .material-icons{
+    padding-right: 10px;
 }
-*/
+.profile a:nth-of-type(2) .material-icons{
+    padding: 0px 15px;
+}
+
 
 .avatar{
     background: url("Android_Wear_92x.png");
