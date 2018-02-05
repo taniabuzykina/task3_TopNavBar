@@ -55,14 +55,13 @@ a{
 .navBarHeader{
     text-transform: uppercase;
     font-size: 12px;
-    padding-top: 40px;
+    padding: 40px 0px 10px;
     font-weight: 700;
 }
 
 .navBarMain{
-    margin-top: 10px;
     background-color: #fefefe;
-    font-size: 20px; 
+    font-size: 18px; 
     width: 100%;
     height: 80px;
     display: flex;
@@ -81,6 +80,7 @@ a{
     border: none;
     height: 30px;
 }
+
 
 /*
 input::placeholder{
@@ -107,7 +107,7 @@ input::placeholder{
 */
 
 .avatar{
-    background: url("Android_Wear_92x.png");
+    background: url(Android%20Wear%20%E2%80%93%209@2x.png);
     width: 25px;
     height: 25px;
     background-size: cover;
