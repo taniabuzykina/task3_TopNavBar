@@ -5,12 +5,11 @@
     <title>TopNavBar</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
-    test
     <div class="container">
         <p class="headingText">Top Nav Bar</p>
         <p class="mainText">Keeping search, toggler, add new, recent and user dropdowns as per your latest demo.</p>
@@ -21,6 +20,38 @@
                     <i class="material-icons">search</i>
                     <input type="text" onfocus="this.value=' '"  value="Type in to Search.." class="mainSearch">
                     <i class="material-icons" style="display: none">filter_list</i>
+
+                    <!--Checkbox bropdown-->
+                    <div class="dd-checkbox">
+                        <div class="left-col">
+                            <label class="option">
+                                <input type="checkbox" id="all">
+                                All
+                            </label>
+                            <div class="option">
+                                <input type="checkbox" id="contacts">
+                                <label for="contacts">Contacts</label>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" id="companies">
+                                <label for="companies">Companies</label>
+                            </div>
+                        </div>
+                        <div class="right-col">
+                            <div class="option">
+                                <input type="checkbox" id="deals">
+                                <label for="deals">Deals</label>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" id="documents">
+                                <label for="documents">Documents</label>
+                            </div>
+                            <div class="option">
+                                <input type="checkbox" id="tickets">
+                                <label for="tickets">Tickets</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="viewModule">
