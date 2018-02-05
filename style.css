@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -113,3 +114,25 @@ input::placeholder{
     height: 25px;
     background-size: cover;
 }
+
+.dd-checkbox {
+    visibility: hidden;
+    display: flex;
+    width: 300px;
+    padding: 15px;
+    /*margin-top: 20px;*/
+    background-color: white;
+}
+
+.dd-checkbox .left-col {
+    flex: 1;
+}
+
+.dd-checkbox .right-col {
+    flex: 1;
+}
+
+.dd-checkbox .option {
+    margin-bottom: 5px;
+}
+
