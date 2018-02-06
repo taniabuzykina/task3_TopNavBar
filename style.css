@@ -213,6 +213,7 @@ a{
 
 
                     .profile{
+                        position: relative;
                         display: flex;
                         flex-direction: row;
                         padding-right: 50px;
@@ -238,14 +239,14 @@ a{
                     /*ADD DROPDOWN*/
 
                     .profile-add {
-                        position: relative;
                         display: flex;
                         align-items: center;
+                        margin-right: 10px;
                     }
 
                     .drop-add {
                         position: absolute;
-                        top: 29%;
+                        top: 188%;
                         display: none;
                         width: 200px;
                         background-color: #fff;
