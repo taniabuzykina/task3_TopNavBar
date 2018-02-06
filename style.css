@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 .becomeBlue{
     color: #11a0f8;
 }
@@ -130,6 +129,37 @@ a{
                     box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
                 }
 
+                /*CHECKBOX DROPDOWN*/
+
+                .option-box {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 5px;
+                    border: 2px solid #CFD8DC;
+                    border-radius: 3px;
+                }
+
+                .box-checked {
+                    border-color: #11A0F8;
+                    background-color: #11A0F8;
+                }
+                .material-icons.tick {
+                    display: none;
+                    color: white;
+                    font-size: 16px;
+                }
+
+                .material-icons.tick.checked {
+                    display: block;
+                }
+
+                .p-checked {
+                    color: #11A0F8;
+                }
+
                 .search .dd-checkbox{
                     left: 1%;
                 }
@@ -211,9 +241,15 @@ input[type="checkbox"]:checked + label{
     color: #11a0f8;
 }*/
 
-
 .becomeVisible {
     display: flex;
 }
+
+
+
+
+
+
+
 
 

@@ -26,28 +26,23 @@ $(document).ready(function () {
         var col = $(this).find(".material-icons").css('color');
         $("#abc").css("color", col);
         $view_module.removeClass('open');
-    }/*, function(){
-        $(".viewModule > .dd-checkbox").hide();
-    }*/);
-
-/*$(".aViewModuleDropDown").click(function() {
-        var clicks = $(this).data('clicks');
-        if (clicks) {
-            $(".viewModule > .dd-checkbox").show();
-        } else {
-            $(".viewModule > .dd-checkbox").hide();
-        }
-        $(this).data("clicks", !clicks);
     });
 
-    $(".moduleMenuOption").click(function(){
-        $(".viewModule > .dd-checkbox").hide();
-    }, function(){
-        
-    }); */
-    /*
-    $(".viewModule > .dd-checkbox").blur(function(){
-        $(".viewModule > .dd-checkbox").hide();
-    });*/
+    $(".option").click(function(){
+        let $tick = $(this).find(".material-icons.tick");
+        let $box = $(this).find(".option-box");
+        let $text = $(this).find("p");
+        if($tick.hasClass('checked')) {
+            $tick.removeClass('checked');
+            $box.removeClass('box-checked');
+            $text.removeClass('p-checked');
+        }
+        else {
+            $tick.addClass('checked');
+            $box.addClass('box-checked');
+            $text.addClass('p-checked');
+        }
+    });
+
 });
 
