@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+
+.becomeBlue{
+    color: #11a0f8;
+}
+/*
+.material-icons{
+    align-self: center;
+}*/
+
 body{
     margin: 0;
     padding: 0;
@@ -14,6 +23,30 @@ body{
 
 p{
     margin: 0;
+}
+
+a{
+    text-decoration: none;
+    border: none;
+    color: inherit;
+    margin: 0;
+    align-self: flex-start;
+}
+
+.layoutGreen{
+    color: #7ace4c;
+}
+.layoutBlue{
+    color: #11a0f8;
+}
+.layoutOrange{
+    color: #ffbb44;
+}
+.layoutMagenta{
+    color: #f33155;
+}
+.layoutViolet{
+    color: #7460ee;
 }
 
 .container{
@@ -30,44 +63,195 @@ p{
     color: #212e35;
 }
 
-.headingText{
-    font-size: 50px;
-    letter-spacing: 1px;
-    padding-top: 50px;
-    font-weight: 300;
-}
+    .headingText{
+        font-size: 50px;
+        letter-spacing: 1px;
+        padding-top: 50px;
+        font-weight: 300;
+        padding-bottom: 15px;
+    }
 
-.mainText{
-    font-size: 16px;
-    padding-top: 15px;
-}
+    .mainText{
+        font-size: 16px;
+    }
+    
+    .navBar{
+        color: #91a6b0;
+    }
 
-.navBar{
+        .navBarHeader{
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: 40px 0px 10px;
+            font-weight: 700;
+        }
+
+        .navBarMain{
+            background-color: #fefefe;
+            font-size: 18px; 
+            width: 100%;
+            height: 80px;
+            display: flex;
+            margin: 0 auto;
+            justify-content: space-between; 
+            align-items: center;
+            align-content: center;
+        }
+
+            .search{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                left: 5%;
+            }
+
+                .mainSearch{
+                    border: none;
+                    height: 30px;
+                }
+                .mainSearch:focus{
+                    outline: none;
+                }
+
+                .material-icons.filterList{
+                    display: none;
+                    align-self: center;
+                    margin: 0;
+                }
+
+                .dd-checkbox {
+                    position: absolute;
+                    display: none;
+                    padding: 15px;
+                    margin-top: 20px;
+                    background-color: white;
+                    top: 34px;
+                    box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
+                }
+
+                .search .dd-checkbox{
+/*                    left: 20%;*/
+                }
+
+                    .dd-checkbox .option {
+                        margin-bottom: 10px;
+                    }
+                    .option {
+                        margin-right: 15px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                        .option label {
+                            padding-left: 7px;
+                        }
+                    
+                    .viewModule{
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        .viewModule .dd-checkbox{
+                            display: none;
+                            text-align: left;
+                            padding: 0px;
+                            cursor: pointer;
+                            min-width: 250px;
+                            color: #263238;
+                        }
+
+                        .viewModule .dd-checkbox.open{
+                            display: block;
+                        }
+                        
+                            .moduleMenuOption{
+                                text-decoration: none;
+                                display: block;
+                                padding: 15px 20px;
+                            }
+                            .moduleMenuOption:hover{
+                                background-color: rgba(244, 248, 249, 0.7);
+                            }
+                                .moduleMenuOption .material-icons{
+                                    display: inline-flex;
+                                    vertical-align: text-bottom;
+                                    padding: 0px 10px 0px 5px;
+                                }
+                        
+
+
+            .profile{
+                display: flex;
+                flex-direction: row;
+                padding-right: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .profile a:first-of-type .material-icons{
+                    padding-right: 10px;
+                }
+                .profile a:nth-of-type(2) .material-icons{
+                    padding: 0px 15px;
+                }
+
+
+                .avatar{
+                    background: url(Android_Wear_92x.png);
+                    width: 25px;
+                    height: 25px;
+                    background-size: cover;
+                }
+                
+                .arrow{
+                    position: relative;
+                }
+                
+                    .arrow .dd-checkbox{
+                        padding: 10px 40px 40px;
+                        right: 0%;
+                    }
+                    .arrowDropdownContent{
+/*                        display: inline-block;*/
+                        display: flex;
+                        flex-direction: column;
+                        padding: none;
+                        min-width: 200px;
+                    }
+                    
+                        .arrowDropdownContent p{
+                            padding-top: 10px;
+                        }
+                        
+                        .fillipMail{
+                            color: #849aa5;
+                        }
+                        
+                        .arrowDropdownContent p:nth-of-type(2), .arrowDropdownContent p:nth-of-type(4){
+                            border-bottom: 1px solid #eaeeef;
+                            padding: 10px 0px 15px;
+                        }
+                        
+                        .arrowDropdownContent .fa-circle{
+                            color: #7bcf4b;
+                            margin-right: 10px;
+                            font-size: 14px;
+                        }
+                        
+                        .arrowDownload{
+                            display: flex;
+                            align-content: center;
+                            justify-content: space-between;
+                        }
+
+                            /*
+input[type="checkbox"]:checked + label{
+    color: #11a0f8;
+}*/
+
+
+.becomeVisible {
     display: flex;
-    justify-content: center;
-    align-content: stretch;
-    flex-direction: column;
-}
-
-.navBarHeader{
-    color: #91a6b0;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding-top: 40px;
-    font-weight: 700;
-}
-
-.navBarMain{
-    margin-top: 10px;
-    background-color: #fefefe;
-    width: 100%;
-    height: 80px;
-}
-
-.mainSearch{
-    border: none;
-}
-
-.mainSearch input::placeholder{
-    color: #c8d1d6;
 }
