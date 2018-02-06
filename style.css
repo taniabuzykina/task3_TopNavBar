@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 .becomeBlue{
     color: #11a0f8;
 }
@@ -73,8 +72,9 @@ a{
 
     .mainText{
         font-size: 16px;
+        padding-top: 15px;
     }
-    
+
     .navBar{
         color: #91a6b0;
     }
@@ -130,8 +130,39 @@ a{
                     box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
                 }
 
+                /*CHECKBOX DROPDOWN*/
+
+                .option-box {
+                    display: flex;
+                    align-items: center;
+                    justify-items: center;
+                    height: 20px;
+                    width: 20px;
+                    margin-right: 10px;
+                    border: 2px solid #CFD8DC;
+                    border-radius: 3px;
+                }
+
+                .box-checked {
+                    border-color: #11A0F8;
+                    background-color: #11A0F8;
+                }
+                .material-icons.tick {
+                    display: none;
+                    color: white;
+                    font-size: 16px;
+                }
+
+                .material-icons.tick.checked {
+                    display: block;
+                }
+
+                .p-checked {
+                    color: #11A0F8;
+                }
+
                 .search .dd-checkbox{
-/*                    left: 20%;*/
+                    left: 20%;
                 }
 
                     .dd-checkbox .option {
@@ -180,8 +211,6 @@ a{
                                     padding: 0px 10px 0px 5px;
                                 }
                         
-
-
             .profile{
                 display: flex;
                 flex-direction: row;
@@ -246,12 +275,38 @@ a{
                             justify-content: space-between;
                         }
 
-                            /*
-input[type="checkbox"]:checked + label{
-    color: #11a0f8;
-}*/
+                    /*ADD DROPDOWN*/
 
+                    .profile-add {
+                        display: flex;
+                        align-items: center;
+                        margin-right: 10px;
+                    }
+
+                    .drop-add {
+                        position: absolute;
+                        top: 188%;
+                        display: none;
+                        width: 200px;
+                        background-color: #fff;
+                        padding-bottom: 20px;
+                    }
+
+                        .add-option {
+                            display: block;
+                            padding: 10px 70px 10px 40px;
+                        }
+
+                        .add-option:hover {
+                            background-color: #F1F9EC;
+                            color: #A0DD84;
+                        }
 
 .becomeVisible {
     display: flex;
 }
+
+.show-block {
+    display: block;
+}
+
