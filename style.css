@@ -161,7 +161,7 @@ a{
                 }
 
                 .search .dd-checkbox{
-                    left: 1%;
+                    left: 20%;
                 }
 
                     .dd-checkbox .option {
@@ -235,14 +235,39 @@ a{
                             background-size: cover;
                         }
 
+                    /*ADD DROPDOWN*/
 
-                            /*
-input[type="checkbox"]:checked + label{
-    color: #11a0f8;
-}*/
+                    .profile-add {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .drop-add {
+                        position: absolute;
+                        top: 29%;
+                        display: none;
+                        width: 200px;
+                        background-color: #fff;
+                        padding-bottom: 20px;
+                    }
+
+                        .add-option {
+                            display: block;
+                            padding: 10px 70px 10px 40px;
+                        }
+
+                        .add-option:hover {
+                            background-color: #F1F9EC;
+                            color: #A0DD84;
+                        }
 
 .becomeVisible {
     display: flex;
+}
+
+.show-block {
+    display: block;
 }
 
 
