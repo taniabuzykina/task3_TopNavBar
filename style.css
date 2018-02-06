@@ -5,9 +5,6 @@
     box-sizing: border-box;
 }
 
-.becomeVisible {
-    display: flex;
-}
 
 .becomeBlue{
     color: #11a0f8;
@@ -208,5 +205,9 @@ input[type="checkbox"]:checked + label{
     color: #11a0f8;
 }*/
 
+
+.becomeVisible {
+    display: flex;
+}
 
 
