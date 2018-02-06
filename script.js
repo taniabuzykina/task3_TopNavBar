@@ -40,10 +40,12 @@ $(document).ready(function () {
 
     $( ".mainSearch" ).keypress(function( event ) {
         if ( event.which == 13 ) {
-           let $querylog = $(".mainSearch").val();
-           console.log($querylog);
+            let $querylog = $(".mainSearch").val();
+            console.log($querylog);
+            var {logquery, logoptions} = consolelog();
+            
         }
-      });
+    });
 
 });
 
