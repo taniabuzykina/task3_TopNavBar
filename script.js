@@ -47,6 +47,14 @@ $(document).ready(function () {
     $(".profile-add").click(function () {
         $(".drop-add").toggleClass("show-block");
     });
+  
+    $( ".mainSearch" ).keypress(function( event ) {
+        if ( event.which == 13 ) {
+            let $querylog = $(".mainSearch").val();
+            console.log($querylog);
+            var {logquery, logoptions} = consolelog();       
+        }
+    });
 
 });
 
