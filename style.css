@@ -32,6 +32,8 @@ a{
     text-decoration: none;
     border: none;
     color: inherit;
+    margin: 0;
+    align-self: flex-start;
 }
 
 .container{
@@ -80,6 +82,7 @@ a{
             margin: 0 auto;
             justify-content: space-between; 
             align-items: center;
+            align-content: center;
         }
 
             .search{
@@ -95,13 +98,17 @@ a{
                     height: 30px;
                 }
 
+                .material-icons.filterList{
+                    display: none;
+                    align-self: center;
+                }
+
                 .dd-checkbox {
                     position: absolute;
                     display: none;
                     padding: 15px;
                     margin-top: 20px;
                     background-color: white;
-                
                     top: 34px;
                     left: 20%;
                     box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
@@ -120,13 +127,31 @@ a{
                         }
                     
                     .viewModule{
+                        position: relative;
                         color: #7560ef;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
+                        .aViewModuleDropDown .material-icons{
+                            align-self: flex-end;
+                        }
+                        .viewModuleMenu{
+                            list-style-type: none;
+                            margin: 0;
+                            padding: 0;
+                        }
+                            .viewModuleMenu li{
+                                display: flex;
+                            }
+
 
                     .profile{
                         display: flex;
                         flex-direction: row;
                         padding-right: 50px;
+                        justify-content: center;
+                        align-items: center;
                     }
 
                         .profile a:first-of-type .material-icons{

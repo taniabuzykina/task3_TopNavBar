@@ -19,10 +19,10 @@
                 <div class="search">
                     <i class="material-icons">search</i>
                     <input type="text" value="Type in to Search.." class="mainSearch">
-                    <i class="material-icons" style="display: none">filter_list</i>
+                    <i class="material-icons filterList" style="display: flex">filter_list</i>
 
                     <!--Checkbox bropdown-->
-                    <div class="dd-checkbox" style="display:flex">
+                    <div class="dd-checkbox">
                         <div class="left-col">
                             <div class="option">
                                 <input type="checkbox" id="all">
@@ -55,7 +55,18 @@
                 </div>
                 
                 <div class="viewModule">
-                    <a href="#"><i class="material-icons">view_module</i></a>
+                    <a href="#" class="aViewModuleDropDown"><i class="material-icons">view_module</i></a>
+
+                    <!--View Module Dropdown-->
+                    <div class="dd-checkbox">
+                        <ul class="viewModuleMenu">
+                            <li class="moduleMenuOption"> <i class="material-icons">view_module</i>Sales</li>
+                            <li class="moduleMenuOption"> <i class="material-icons">view_module</i>Marketing</li>
+                            <li class="moduleMenuOption"> <i class="material-icons">view_module</i>Services</li>
+                            <li class="moduleMenuOption"> <i class="material-icons">view_module</i>Real Estate</li>
+                            <li class="moduleMenuOption"> <i class="material-icons">view_module</i>Call Center</li>
+                        </ul>
+                    </div>
                 </div>
                 
                 <div class="profile">
