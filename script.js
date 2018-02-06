@@ -47,14 +47,26 @@ $(document).ready(function () {
     $(".profile-add").click(function () {
         $(".drop-add").toggleClass("show-block");
     });
-  
-    $( ".mainSearch" ).keypress(function( event ) {
+
+    function Obj(query, options) {
+        this.query = query;
+        this.options = options;
+    }
+
+    $( ".search" ).keypress(function( event ) {
         if ( event.which == 13 ) {
             let $querylog = $(".mainSearch").val();
-            console.log($querylog);
-            var {logquery, logoptions} = consolelog();       
+            let $arr = [];
+            let $text = $(this).find(".p-checked")
+                .map(function () {
+                    $arr.push($(this).text());
+                });
+
+            // console.log($arr);
+            // console.log($querylog);
+            let obj = new Obj($querylog, $arr);
+            console.log(obj);
         }
     });
 
 });
-
