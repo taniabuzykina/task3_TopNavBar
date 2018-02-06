@@ -1,9 +1,15 @@
 $(document).ready(function () {
+/*
+    $(".search").click(function () {
+        $(".dd-checkbox").toggleClass("visible");       //не работает
+    });*/
     $(".mainSearch").focus(function(){
         $(".filterList").show();
         $(".search").css("border-bottom", "1px solid lightgrey");
     });
-
+    /*$(".search").blur(function(){
+        $(".filterList").hide();
+    });*/
     $(".filterList").click(function(){
         $(".search > .dd-checkbox").toggleClass("becomeVisible");
     });
@@ -38,12 +44,15 @@ $(document).ready(function () {
         }
     });
 
+    $(".profile-add").click(function () {
+        $(".drop-add").toggleClass("show-block");
+    });
+  
     $( ".mainSearch" ).keypress(function( event ) {
         if ( event.which == 13 ) {
             let $querylog = $(".mainSearch").val();
             console.log($querylog);
-            var {logquery, logoptions} = consolelog();
-            
+            var {logquery, logoptions} = consolelog();       
         }
     });
 
