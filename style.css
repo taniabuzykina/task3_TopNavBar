@@ -154,12 +154,18 @@ a{
                         align-items: center;
                     }
                         .viewModule .dd-checkbox{
+                            display: none;
                             text-align: left;
                             padding: 0px;
                             cursor: pointer;
                             min-width: 250px;
                             color: #263238;
                         }
+
+                        .viewModule .dd-checkbox.open{
+                            display: block;
+                        }
+                        
                             .moduleMenuOption{
                                 text-decoration: none;
                                 display: block;

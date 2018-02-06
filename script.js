@@ -14,16 +14,21 @@ $(document).ready(function () {
         $(".search > .dd-checkbox").toggleClass("becomeVisible");
     });
 
+    let $view_module = $(".viewModule .dd-checkbox");
     $(".aViewModuleDropDown").click(function(){
-        $(".viewModule > .dd-checkbox").toggleClass("becomeVisible");
+        if($view_module.hasClass('open')) 
+            $view_module.removeClass('open');
+        else 
+            $view_module.addClass('open');
     });
 
     $(".moduleMenuOption").click( function () {
-        var col = $(this).css('color');
-        $(".aViewModuleDropDown > i.material-icons.layoutViolet").css("color", "black");
-    }, function(){
+        var col = $(this).find(".material-icons").css('color');
+        $("#abc").css("color", col);
+        $view_module.removeClass('open');
+    }/*, function(){
         $(".viewModule > .dd-checkbox").hide();
-    });
+    }*/);
 
 /*$(".aViewModuleDropDown").click(function() {
         var clicks = $(this).data('clicks');
