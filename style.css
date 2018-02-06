@@ -71,6 +71,7 @@ a{
 }
 
 .search{
+    position: relative;
     padding-left: 50px;
     display: flex;
     justify-content: center;
@@ -112,4 +113,38 @@ input::placeholder{
     width: 25px;
     height: 25px;
     background-size: cover;
+}
+
+.dd-checkbox {
+    position: absolute;
+    display: none;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: white;
+
+    top: 34px;
+    left: 20%;
+    box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
+}
+
+.option {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.option label {
+    padding-left: 7px;
+}
+
+input[type="checkbox"]:checked + label{
+    color: #11a0f8;
+}
+
+.dd-checkbox .option {
+    margin-bottom: 10px;
+}
+
+.visible {
+    display: flex;
 }
