@@ -11,19 +11,19 @@ $(document).ready(function () {
         $(".filterList").hide();
     });*/
     $(".filterList").click(function(){
-        $(".search > .dd-checkbox").show();
+        $(".search > .dd-checkbox").toggleClass("becomeVisible");
     });
 
     $(".aViewModuleDropDown").click(function(){
-        $(".viewModule > .dd-checkbox").show();
+        $(".viewModule > .dd-checkbox").toggleClass("becomeVisible");
     });
 
-    $(".moduleMenuOption").click(function(){
+    $(".moduleMenuOption").click( function () {
+        var col = $(this).css('color');
+        $(".aViewModuleDropDown > i.material-icons.layoutViolet").css("color", "black");
+    }, function(){
         $(".viewModule > .dd-checkbox").hide();
-    }/* , function () {
-        var colorClass = $(this).attr('class');
-        $(".aViewModuleDropDown > .material-icons.layoutViolet").addClass(colorClass);
-    } */);
+    });
 
 /*$(".aViewModuleDropDown").click(function() {
         var clicks = $(this).data('clicks');
