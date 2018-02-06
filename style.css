@@ -67,6 +67,7 @@ a{
         letter-spacing: 1px;
         padding-top: 50px;
         font-weight: 300;
+        padding-bottom: 15px;
     }
 
     .mainText{
@@ -210,30 +211,68 @@ a{
                                     padding: 0px 10px 0px 5px;
                                 }
                         
+            .profile{
+                display: flex;
+                flex-direction: row;
+                padding-right: 50px;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .profile a:first-of-type .material-icons{
+                    padding-right: 10px;
+                }
+                .profile a:nth-of-type(2) .material-icons{
+                    padding: 0px 15px;
+                }
 
 
-                    .profile{
-                        position: relative;
-                        display: flex;
-                        flex-direction: row;
-                        padding-right: 50px;
-                        justify-content: center;
-                        align-items: center;
+                .avatar{
+                    background: url(Android_Wear_92x.png);
+                    width: 25px;
+                    height: 25px;
+                    background-size: cover;
+                }
+                
+                .arrow{
+                    position: relative;
+                }
+                
+                    .arrow .dd-checkbox{
+                        padding: 10px 40px 40px;
+                        right: 0%;
                     }
-
-                        .profile a:first-of-type .material-icons{
-                            padding-right: 10px;
+                    .arrowDropdownContent{
+/*                        display: inline-block;*/
+                        display: flex;
+                        flex-direction: column;
+                        padding: none;
+                        min-width: 200px;
+                    }
+                    
+                        .arrowDropdownContent p{
+                            padding-top: 10px;
                         }
-                        .profile a:nth-of-type(2) .material-icons{
-                            padding: 0px 15px;
+                        
+                        .fillipMail{
+                            color: #849aa5;
                         }
-
-
-                        .avatar{
-                            background: url(Android_Wear_92x.png);
-                            width: 25px;
-                            height: 25px;
-                            background-size: cover;
+                        
+                        .arrowDropdownContent p:nth-of-type(2), .arrowDropdownContent p:nth-of-type(4){
+                            border-bottom: 1px solid #eaeeef;
+                            padding: 10px 0px 15px;
+                        }
+                        
+                        .arrowDropdownContent .fa-circle{
+                            color: #7bcf4b;
+                            margin-right: 10px;
+                            font-size: 14px;
+                        }
+                        
+                        .arrowDownload{
+                            display: flex;
+                            align-content: center;
+                            justify-content: space-between;
                         }
 
                     /*ADD DROPDOWN*/
@@ -270,12 +309,4 @@ a{
 .show-block {
     display: block;
 }
-
-
-
-
-
-
-
-
 

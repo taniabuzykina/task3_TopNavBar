@@ -1,15 +1,8 @@
 $(document).ready(function () {
-/*
-    $(".search").click(function () {
-        $(".dd-checkbox").toggleClass("visible");       //не работает
-    });*/
     $(".mainSearch").focus(function(){
         $(".filterList").show();
         $(".search").css("border-bottom", "1px solid lightgrey");
     });
-    /*$(".search").blur(function(){
-        $(".filterList").hide();
-    });*/
     $(".filterList").click(function(){
         $(".search > .dd-checkbox").toggleClass("becomeVisible");
     });
@@ -27,6 +20,11 @@ $(document).ready(function () {
         $("#abc").css("color", col);
         $view_module.removeClass('open');
     });
+
+    $(".arrowDropdown").click(function(){
+        $(".arrow > .dd-checkbox").toggleClass("becomeVisible");
+    });
+
 
     $(".option").click(function(){
         let $tick = $(this).find(".material-icons.tick");
