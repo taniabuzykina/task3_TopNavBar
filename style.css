@@ -36,6 +36,22 @@ a{
     align-self: flex-start;
 }
 
+.layoutGreen{
+    color: #7ace4c;
+}
+.layoutBlue{
+    color: #11a0f8;
+}
+.layoutOrange{
+    color: #ffbb44;
+}
+.layoutMagenta{
+    color: #f33155;
+}
+.layoutViolet{
+    color: #7460ee;
+}
+
 .container{
     padding: 0px 10px;
     width: 80%;
@@ -87,20 +103,24 @@ a{
 
             .search{
                 position: relative;
-                padding-left: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                left: 5%;
             }
 
                 .mainSearch{
                     border: none;
                     height: 30px;
                 }
+                .mainSearch:focus{
+                    outline: none;
+                }
 
                 .material-icons.filterList{
                     display: none;
                     align-self: center;
+                    margin: 0;
                 }
 
                 .dd-checkbox {
@@ -132,7 +152,6 @@ a{
                     
                     .viewModule{
                         position: relative;
-                        color: #7560ef;
                         display: flex;
                         justify-content: center;
                         align-items: center;
@@ -142,6 +161,7 @@ a{
                             padding: 0px;
                             cursor: pointer;
                             min-width: 250px;
+                            color: #263238;
                         }
                             .moduleMenuOption{
                                 text-decoration: none;
