@@ -7,8 +7,11 @@ $(document).ready(function () {
         $(".filterList").show();
         $(".search").css("border-bottom", "1px solid lightgrey");
     });
-    $(".mainSearch").blur(function(){
+    /*$(".search").blur(function(){
         $(".filterList").hide();
+    });*/
+    $(".filterList").click(function(){
+        $(".search > .dd-checkbox").show();
     });
 
     $(".aViewModuleDropDown").click(function(){
