@@ -135,6 +135,7 @@ input::placeholder{
 
 .option label {
     padding-left: 7px;
+=======
 }
 
 input[type="checkbox"]:checked + label{
