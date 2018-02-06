@@ -214,7 +214,6 @@ a{
             .profile{
                 display: flex;
                 flex-direction: row;
-                padding-right: 50px;
                 justify-content: center;
                 align-items: center;
             }
@@ -237,7 +236,9 @@ a{
                 .arrow{
                     position: relative;
                 }
-                
+                    .arrowDropdown .material-icons{
+                        padding-right: 40px;
+                    }
                     .arrow .dd-checkbox{
                         padding: 10px 40px 40px;
                         right: 0%;
