@@ -1,35 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>TopNavBar</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-</head>
-<body>
-    <div class="container">
-        <p class="headingText">Top Nav Bar</p>
-        <p class="mainText">Keeping search, toggler, add new, recent and user dropdowns as per your latest demo.</p>
-        <div class="navBar">
-            <p class="navBarHeader">Default Navbar</p>
-            <div class="navBarMain">
-                <div class="search">
-                    <i class="material-icons">search</i>
-                    <input type="text" onfocus="this.value=''" value="Type in to Search.." class="mainSearch">
-                </div>
-                
-                <div class="viweModule">
+    <head>
+        <meta charset="UTF-8">
+        <title>TopNavBar</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <p class="headingText">Top Nav Bar</p>
+            <p class="mainText">Keeping search, toggler, add new, recent and user dropdowns as per your latest demo.</p>
+            <div class="navBar">
+                <p class="navBarHeader">Default Navbar</p>
+                <div class="navBarMain">
+                    <div class="search">
+                        <i class="material-icons">search</i>
+                        <input type="text" placeholder="Type in to Search.." class="mainSearch">
+                        <a class="aFilterList"><i class="material-icons filterList">filter_list</i></a>
+
+                        <!--Checkbox bropdown-->
+                        <div class="dd-checkbox">
+                            <div class="left-col">
+                                <div class="option">
+                                    <input type="checkbox" id="all">
+                                    <label for="all">All</label>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" id="contacts">
+                                    <label for="contacts">Contacts</label>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" id="companies">
+                                    <label for="companies">Companies</label>
+                                </div>
+                            </div>
+                            <div class="right-col">
+                                <div class="option">
+                                    <input type="checkbox" id="deals">
+                                    <label for="deals">Deals</label>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" id="documents">
+                                    <label for="documents">Documents</label>
+                                </div>
+                                <div class="option">
+                                    <input type="checkbox" id="tickets">
+                                    <label for="tickets">Tickets</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
-                </div>
-                
-                <div class="profile">
+                    <div class="viewModule">
+                        <a href="#" class="aViewModuleDropDown"><i class="material-icons layoutViolet" id="abc">view_module</i></a>
+
+                        <!--View Module Dropdown-->
+                        <div class="dd-checkbox">
+                                <a class="moduleMenuOption" href="#"> <i class="material-icons layoutViolet">view_module</i>Sales </a>
+                                <a class="moduleMenuOption" href="#"> <i class="material-icons layoutBlue">view_module</i>Marketing </a>
+                                <a class="moduleMenuOption" href="#"> <i class="material-icons layoutOrange">view_module</i>Services </a>    
+                                <a class="moduleMenuOption" href="#"> <i class="material-icons layoutMagenta">view_module</i>Real Estate</a>
+                                <a class="moduleMenuOption" href="#"> <i class="material-icons layoutGreen">view_module</i>Call Cnter </a>
+                        </div>
+                    </div>
                     
+                    <div class="profile">
+                        <a href="#"><i class="material-icons">add</i></a>
+                        <p class="pAdd">Add</p>
+                        <a href="#"><i class="material-icons">timelapse</i></a>
+                        <a href="#"><div class="avatar"></div></a>
+                        <div class="arrow">
+                            <a href="#" class="arrowDropdown"><i class="material-icons">arrow_drop_down</i></a>
+                            <div class="dd-checkbox">
+                               <div class="arrowDropdownContent">
+                                    <p class="mainText">Fillip</p>
+                                    <p class="mainText fillipMail">fillip@bb.agency</p>
+                                    <p class="mainText">Preferences</p>
+                                    <p class="mainText">Theme &#38; Layout</p>
+                                    <p class="mainText">Plan &#38; Upgrade</p>
+                                    <p class="mainText">Product Upgrades</p>
+                                    <p class="mainText">Affiliate Program</p>
+                                    <p class="mainText">Help</p>
+                                    <p class="mainText"><i class="fas fa-circle"></i>Chat With Us</p>
+                                    <div class="arrowDownload">
+                                        <p class="mainText">Download Plugin</p>
+                                        <i class="material-icons">arrow_drop_down</i>
+                                    </div>
+                                    <p class="mainText">Logout</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</body>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
