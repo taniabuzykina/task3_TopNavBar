@@ -110,9 +110,13 @@ a{
                     margin-top: 20px;
                     background-color: white;
                     top: 34px;
-                    left: 20%;
                     box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
                 }
+
+                .search .dd-checkbox{
+                    left: 20%;
+                }
+
                     .dd-checkbox .option {
                         margin-bottom: 10px;
                     }
@@ -135,14 +139,17 @@ a{
                     }
                         .viewModule .dd-checkbox{
                             text-align: left;
-                            padding: 20px;
+                            padding: 0px;
                             cursor: pointer;
-                            min-width: 200px;
+                            min-width: 250px;
                         }
                             .moduleMenuOption{
                                 text-decoration: none;
                                 display: block;
-                                padding: 5px 0px;
+                                padding: 15px 20px;
+                            }
+                            .moduleMenuOption:hover{
+                                background-color: rgba(244, 248, 249, 0.7);
                             }
                                 .moduleMenuOption .material-icons{
                                     display: inline-flex;
