@@ -133,17 +133,23 @@ a{
                         justify-content: center;
                         align-items: center;
                     }
-                        .aViewModuleDropDown .material-icons{
-                            align-self: flex-end;
+                        .viewModule .dd-checkbox{
+                            text-align: left;
+                            padding: 20px;
+                            cursor: pointer;
+                            min-width: 200px;
                         }
-                        .viewModuleMenu{
-                            list-style-type: none;
-                            margin: 0;
-                            padding: 0;
-                        }
-                            .viewModuleMenu li{
-                                display: flex;
+                            .moduleMenuOption{
+                                text-decoration: none;
+                                display: block;
+                                padding: 5px 0px;
                             }
+                                .moduleMenuOption .material-icons{
+                                    display: inline-flex;
+                                    vertical-align: text-bottom;
+                                    padding: 0px 10px 0px 5px;
+                                }
+                        
 
 
                     .profile{

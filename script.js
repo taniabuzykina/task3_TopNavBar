@@ -21,7 +21,7 @@ $(document).ready(function () {
             $(".viewModule > .dd-checkbox").show();
         }
     );
-    $(".aViewModuleDropDown").dblclick(
+    $(".moduleMenuOption").click(
         function(){
             $(".viewModule > .dd-checkbox").hide();
         }
