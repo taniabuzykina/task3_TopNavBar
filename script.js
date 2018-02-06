@@ -63,7 +63,7 @@ $(document).ready(function () {
         }
     });
 
-    $(".pAdd").click(function () {
+    $(".profile-add").click(function () {
         $(".drop-add").toggleClass("show-block");
     });
 

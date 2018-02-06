@@ -225,6 +225,33 @@ a{
                     padding: 0px 15px;
                 }
 
+                /*ADD DROPDOWN*/
+
+                .profile-add {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                }
+
+                .drop-add {
+                    position: absolute;
+                    top: 188%;
+                    display: none;
+                    width: 200px;
+                    background-color: #fff;
+                    padding-bottom: 20px;
+                }
+
+                    .add-option {
+                        display: block;
+                        padding: 10px 70px 10px 40px;
+                    }
+
+                    .add-option:hover {
+                        background-color: #F1F9EC;
+                        color: #A0DD84;
+                    }
+
 
                 .avatar{
                     background: url(Android_Wear_92x.png);
@@ -276,32 +303,6 @@ a{
                             justify-content: space-between;
                         }
 
-                    /*ADD DROPDOWN*/
-
-                    .profile-add {
-                        display: flex;
-                        align-items: center;
-                        margin-right: 10px;
-                    }
-
-                    .drop-add {
-                        position: absolute;
-                        top: 188%;
-                        display: none;
-                        width: 200px;
-                        background-color: #fff;
-                        padding-bottom: 20px;
-                    }
-
-                        .add-option {
-                            display: block;
-                            padding: 10px 70px 10px 40px;
-                        }
-
-                        .add-option:hover {
-                            background-color: #F1F9EC;
-                            color: #A0DD84;
-                        }
 
 .becomeVisible {
     display: flex;
