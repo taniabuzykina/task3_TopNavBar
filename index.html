@@ -1,143 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>TopNavBar</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    </head>
-    <body>aadsfas
-        <div class="container">
-            <p class="headingText">Top Nav Bar</p>
-            <p class="mainText">Keeping search, toggler, add new, recent and user dropdowns as per your latest demo.</p>
+<head>
+    <meta charset="UTF-8">
+    <title>TopNavBar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar">
 
-            <div class="navBar">
-                <p class="navBarHeader">Default Navbar</p>
+            <div class="searchbar">
 
-                <div class="navBarMain">
-                    <div class="search">
-                      <div class="inputarea">
-                        <i class="material-icons searchicon">search</i>
-                          <input class="mainSearch" type="text" placeholder="Type in to Search..">
-                          <a class="aFilterList"><i class="material-icons filterList">filter_list</i></a>
+                <i class="material-icons">search</i>
+                <input class="searchbar__input" type="text" placeholder="Type in to Search..">
+                <i class="material-icons searchbar__filter-icon">filter_list</i>
+
+                <!--Checkbox bropdown-->
+                <div class="search__dropdown">
+                    <div class="left-col">
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
+                            </div>
+                            <p>All</p>
                         </div>
-
-                        <!--Checkbox bropdown-->
-                        <div class="dd-checkbox">
-                            <div class="left-col">
-                                <div class="option">
-                                    <div class="option-box">
-                                        <i class="material-icons tick">check</i>
-                                    </div>
-                                    <p>All</p>
-                                </div>
-                                <div class="option">
-                                    <div class="option-box">
-                                        <i class="material-icons tick">check</i>
-                                    </div>
-                                    <p>Contacts</p>
-                                </div>
-                                <div class="option">
-                                    <div class="option-box">
-                                        <i class="material-icons tick">check</i>
-                                    </div>
-                                    <p>Companies</p>
-                                </div>
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
                             </div>
-                            <div class="right-col">
-                                <div class="option">
-                                    <div class="option-box">
-                                        <i class="material-icons tick">check</i>
-                                    </div>
-                                    <p>Deals</p>
-                                </div>
-                                <div class="option">
-                                    <div class="option-box">
-                                        <i class="material-icons tick">check</i>
-                                    </div>
-                                    <p>Documents</p>
-                                </div>
-                                <div class="option">
-                                    <div class="option-box">
-                                        <i class="material-icons tick">check</i>
-                                    </div>
-                                    <p>Tickets</p>
-                                </div>
+                            <p>Contacts</p>
+                        </div>
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
                             </div>
+                            <p>Companies</p>
                         </div>
                     </div>
-
-                    <div class="viewModule">
-                        <a href="#" class="aViewModuleDropDown">
-                            <i class="material-icons layoutViolet">view_module</i>
-                        </a>
-
-                        <!--View Module Dropdown-->
-                        <div class="dd-checkbox">
-                            <a class="moduleMenuOption" href="#"> <i class="material-icons layoutViolet">view_module</i>Sales </a>
-                            <a class="moduleMenuOption" href="#"> <i class="material-icons layoutBlue">view_module</i>Marketing </a>
-                            <a class="moduleMenuOption" href="#"> <i class="material-icons layoutOrange">view_module</i>Services </a>
-                            <a class="moduleMenuOption" href="#"> <i class="material-icons layoutMagenta">view_module</i>Real Estate</a>
-                            <a class="moduleMenuOption" href="#"> <i class="material-icons layoutGreen">view_module</i>Call Cnter </a>
-                        </div>
-
-                    </div>
-
-                    <div class="profile">
-                        <div class="profile-add">
-                            <a href="#" class="addClick">
-                              <i class="material-icons">add</i>
-                              <p class="pAdd">Add</p>
-                            </a>
-
-                            <!-- ADD DROPDOWN -->
-                            <div class="drop-add">
-                                <a href="#" class="add-option">Contact</a>
-                                <a href="#" class="add-option">Company</a>
-                                <a href="#" class="add-option">Deal</a>
-                                <a href="#" class="add-option">Event</a>
-                                <a href="#" class="add-option">Task</a>
-                                <a href="#" class="add-option">Note</a>
-                                <a href="#" class="add-option">Email</a>
-                                <a href="#" class="add-option">Ticket</a>
-                                <a href="#" class="add-option">Call</a>
+                    <div class="right-col">
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
                             </div>
+                            <p>Deals</p>
                         </div>
-
-                        <a href="#"><i class="material-icons">timelapse</i></a>
-                        <a href="#"><div class="arrowDropdown avatar"></div></a>
-
-                        <div class="arrow">
-                            <a href="#" class="arrowDropdown"><i class="material-icons">arrow_drop_down</i></a>
-
-                            <div class="dd-checkbox">
-                                <div class="arrowDropdownContent">
-                                    <p class="mainText">Fillip</p>
-                                    <p class="mainText fillipMail">fillip@bb.agency</p>
-                                    <p class="mainText">Preferences</p>
-                                    <p class="mainText">Theme &#38; Layout</p>
-                                    <p class="mainText">Plan &#38; Upgrade</p>
-                                    <p class="mainText">Product Upgrades</p>
-                                    <p class="mainText">Affiliate Program</p>
-                                    <p class="mainText">Help</p>
-                                    <p class="mainText"><i class="fas fa-circle"></i>Chat With Us</p>
-                                    <div class="arrowDownload">
-                                        <p class="mainText">Download Plugin</p>
-                                        <i class="material-icons">arrow_drop_down</i>
-                                    </div>
-                                    <p class="mainText">Logout</p>
-                                </div>
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
                             </div>
+                            <p>Documents</p>
+                        </div>
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
+                            </div>
+                            <p>Tickets</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-        <script src="script.js"></script>
-    </body>
+            </div>
+
+
+            <div class="center">
+
+                <div class="viewModule">
+                    <i class="material-icons layoutViolet">view_module</i>
+                </div>
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="profile__panel">
+                    <i class="material-icons">add</i>
+                    <p class="add">Add</p>
+                </div>
+
+                <i class="material-icons">timelapse</i>
+                <div class="logout">
+                    <img src="Android_Wear_92x.png" class="profile__avatar">
+                    <i class="material-icons">arrow_drop_down</i>
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+    <!-- /.container -->
+</body>
 </html>
