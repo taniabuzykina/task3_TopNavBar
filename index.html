@@ -11,62 +11,87 @@
 </head>
 <body>
     <div class="container">
-        <p class="headingText">Top Nav Bar</p>
-        <p class="mainText">Keeping search, toggler, add new, recent and user dropdowns as per your latest demo.</p>
-        <div class="navBar">
-            <p class="navBarHeader">Default Navbar</p>
-            <div class="navBarMain">
-                <div class="search">
-                    <i class="material-icons">search</i>
-                    <input type="text" value="Type in to Search.." class="mainSearch">
-                    <i class="material-icons" style="display: none">filter_list</i>
+        <nav class="navbar">
 
-                    <!--Checkbox bropdown-->
-                    <div class="dd-checkbox" style="display:flex">
-                        <div class="left-col">
-                            <div class="option">
-                                <input type="checkbox" id="all">
-                                <label for="all">All</label>
+            <div class="searchbar">
+
+                <i class="material-icons">search</i>
+                <input class="searchbar__input" type="text" placeholder="Type in to Search..">
+                <i class="material-icons searchbar__filter-icon">filter_list</i>
+
+                <!--Checkbox bropdown-->
+                <div class="search__dropdown">
+                    <div class="left-col">
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
                             </div>
-                            <div class="option">
-                                <input type="checkbox" id="contacts">
-                                <label for="contacts">Contacts</label>
-                            </div>
-                            <div class="option">
-                                <input type="checkbox" id="companies">
-                                <label for="companies">Companies</label>
-                            </div>
+                            <p>All</p>
                         </div>
-                        <div class="right-col">
-                            <div class="option">
-                                <input type="checkbox" id="deals">
-                                <label for="deals">Deals</label>
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
                             </div>
-                            <div class="option">
-                                <input type="checkbox" id="documents">
-                                <label for="documents">Documents</label>
+                            <p>Contacts</p>
+                        </div>
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
                             </div>
-                            <div class="option">
-                                <input type="checkbox" id="tickets">
-                                <label for="tickets">Tickets</label>
+                            <p>Companies</p>
+                        </div>
+                    </div>
+                    <div class="right-col">
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
                             </div>
+                            <p>Deals</p>
+                        </div>
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
+                            </div>
+                            <p>Documents</p>
+                        </div>
+                        <div class="option">
+                            <div class="option-box">
+                                <i class="material-icons tick">check</i>
+                            </div>
+                            <p>Tickets</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="viewModule">
-                    <a href="#"><i class="material-icons">view_module</i></a>
-                </div>
-                
-                <div class="profile">
-                    <a href="#"><i class="material-icons">add</i></a>
-                    <p class="pAdd">Add</p>
-                    <a href="#"><i class="material-icons">timelapse</i></a>
-                    <a href="#"><div class="avatar"></div></a>
-                    <a href="#"><i class="material-icons">arrow_drop_down</i></a>
-                </div>
+
             </div>
-        </div>
+
+
+            <div class="center">
+
+                <div class="viewModule">
+                    <i class="material-icons layoutViolet">view_module</i>
+                </div>
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="profile__panel">
+                    <i class="material-icons">add</i>
+                    <p class="add">Add</p>
+                </div>
+
+                <i class="material-icons">timelapse</i>
+                <div class="logout">
+                    <img src="Android_Wear_92x.png" class="profile__avatar">
+                    <i class="material-icons">arrow_drop_down</i>
+                </div>
+
+            </div>
+
+        </nav>
     </div>
+    <!-- /.container -->
 </body>
 </html>

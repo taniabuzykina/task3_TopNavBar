@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/task3_TopNavBar.iml" filepath="$PROJECT_DIR$/.idea/task3_TopNavBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Task3-refactored.iml" filepath="$PROJECT_DIR$/.idea/Task3-refactored.iml" />
     </modules>
   </component>
 </project>
