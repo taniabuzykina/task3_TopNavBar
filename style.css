@@ -77,9 +77,13 @@ a{
         outline: none;
     }
 
+    .filter-icon {
+        visibility: hidden;
+    }
+
     .searchbar__dropdown {
         position: absolute;
-        display: flex;
+        display: none;
         padding: 20px;
         background-color: white;
         top: 32px;
@@ -177,3 +181,11 @@ a{
         width: 25px;
         height: 25px;
     }
+
+.becomeVisible {
+    display: flex;
+}
+
+.show-block {
+    display: block;
+}

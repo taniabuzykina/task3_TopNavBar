@@ -7,8 +7,8 @@ $(document).ready(function () {
         $(".searchicon").css("color", "#79919d");
         $(".search > .dd-checkbox").removeClass("becomeVisible");*/
 
-    $(".filterList").click(function(){
-        $(".search > .dd-checkbox").addClass("becomeVisible");
+    $(".filter-icon").click(function(){
+        $(".searchbar__dropdown").toggleClass("becomeVisible");
         console.log("the filter has been clicked");
     });
 
