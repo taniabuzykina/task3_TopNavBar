@@ -2,19 +2,37 @@ $(document).ready(function () {
 
     $(".mainSearch").focus(function(){
         $(".filterList").show();
-        $(".search").css("border-bottom", "1px solid lightgrey");
+        $(".inputarea").css("border-bottom", "1px solid lightgrey");
         $(".searchicon").css("color", "black");
     });
 
-    $(".mainSearch").blur(function(){
-        $(".filterList").hide();
-        $(".search").css("border-bottom", "none");
-    });
+    function searchhide(){
+      $(".filterList").hide();
+      $(".search").css("border-bottom", "none");
+      $(".searchicon").css("color", "#79919d");
+    }
 
-    //region CHECKBOX DROPDOWN
+
+    $(".inputarea").blur(function(){
+        console.log("not clicked");
+        searchhide();
+      });
+      //$('body').on('click', '.filterList')
+        /*$(".filterList").hide();
+        $(".search").css("border-bottom", "none");
+        $(".searchicon").css("color", "#79919d");
+        $(".search > .dd-checkbox").removeClass("becomeVisible");*/
+
     $(".filterList").click(function(){
         $(".search > .dd-checkbox").toggleClass("becomeVisible");
+        console.log("the filter has been clicked");
     });
+
+    $(".mainSearch").blur(function(){
+        console.log("filter has lost the focus");
+        searchhide();
+    });
+    //region CHECKBOX DROPDOWN
 
         $(".option").click(function(){
             let $tick = $(this).find(".material-icons.tick");
@@ -60,6 +78,10 @@ $(document).ready(function () {
             $view_module.addClass('open');
     });
 
+    $(".aViewModuleDropDown").blur(function(){
+        $view_module.removeClass('open');
+    });
+
         $(".moduleMenuOption").click( function () {
             var col = $(this).find(".material-icons").css('color');
             $(".aViewModuleDropDown > .material-icons.layoutViolet").css("color", col);
@@ -67,12 +89,20 @@ $(document).ready(function () {
         });
 
 
-    $(".profile-add").click(function () {
+    $(".addClick").click(function () {
         $(".drop-add").toggleClass("show-block");
+        console.log("focus");
+    });
+
+    $(".addClick").blur(function () {
+        $(".drop-add").removeClass("show-block");
     });
 
     $(".arrowDropdown").click(function(){
         $(".arrow > .dd-checkbox").toggleClass("becomeVisible");
     });
 
+    $(".arrowDropdown").blur(function(){
+        $(".arrow > .dd-checkbox").removeClass("becomeVisible");
+    });
 });
