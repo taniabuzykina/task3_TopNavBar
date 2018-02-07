@@ -95,7 +95,7 @@ a{
         }
 
         .search, .profile, .viewModule{
-          flex: 0 33.333;
+          flex: 0 0 33.333%;
         }
           .inputarea{
               display: inline-flex;
