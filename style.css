@@ -194,3 +194,7 @@ a{
 .visible {
     visibility: visible;
 }
+
+.add-selected {
+    color: #66CD2E;
+}

@@ -13,6 +13,7 @@ $(document).ready(function () {
     });
 
     $(".profile__panel").click(function () {
+        $(this).toggleClass("add-selected");
         $(".profile__add").toggleClass("show-block");
     });
 
