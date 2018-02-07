@@ -78,6 +78,7 @@ a{
     }
 
     .filter-icon {
+        cursor: pointer;
         /*visibility: hidden;*/
     }
 
