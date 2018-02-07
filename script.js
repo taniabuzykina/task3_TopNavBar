@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
 
-      //$('body').on('click', '.filterList')
         /*$(".filterList").hide();
         $(".search").css("border-bottom", "none");
         $(".searchicon").css("color", "#79919d");
         $(".search > .dd-checkbox").removeClass("becomeVisible");*/
+  
 
     $(".filter-icon").click(function(){
         $(".searchbar__dropdown").toggleClass("becomeVisible");
