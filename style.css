@@ -43,7 +43,7 @@ a{
 .navbar {
     padding: 0 50px;
     display: flex;
-    justify-content: space-between;
+/*    justify-content: space-between;*/
     align-items: center;
 
     color: #78909C;
@@ -53,13 +53,16 @@ a{
     height: 80px;
 }
 
+.searchbar, .profile, .center{
+    flex: 0  0 33.333%;
+}
+
 /*SEARCHBAR*/
 
 .searchbar {
     width: 300px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     position: relative;
 }
 
@@ -68,7 +71,6 @@ a{
 }
 
     .searchbar__input {
-        margin-left: -61px;
         border: none;
         height: 30px;
     }
@@ -86,7 +88,7 @@ a{
         display: none;
         padding: 20px;
         background-color: white;
-        top: 32px;
+        top: 55px;
         box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
     }
         .option-box {
@@ -131,12 +133,21 @@ a{
         .option label {
             padding-left: 7px;
         }
+
+/*CENTER*/
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
 /*PROFILE BAR*/
 
 .profile {
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: flex-end;
 }
 
 .profile > * {
@@ -153,31 +164,12 @@ a{
         margin-left: 10px;
     }
 
-    .profile__add {
-        position: absolute;
-        top: 50px;
-        left: -50px;
-        /*display: none;*/
-        width: 200px;
-        background-color: #fff;
-        padding-bottom: 20px;
-    }
-
-    .add-option {
-        display: block;
-        padding: 10px 70px 10px 40px;
-    }
-
-    .add-option:hover {
-        background-color: #F1F9EC;
-        color: #A0DD84;
-    }
-
 .logout {
     display: flex;
 }
 
     .profile__avatar {
+<<<<<<< HEAD
         width: 25px;
         height: 25px;
     }
@@ -189,3 +181,8 @@ a{
 .show-block {
     display: block;
 }
+=======
+        width: 28px;
+        height: 28px;
+}
+>>>>>>> 64aa7c96b778fa0644df887743a71db0b398644f
