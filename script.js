@@ -3,13 +3,19 @@ $(document).ready(function () {
     $(".mainSearch").focus(function(){
         $(".filterList").show();
         $(".search").css("border-bottom", "1px solid lightgrey");
+        $(".searchicon").css("color", "black");
+    });
+
+    $(".mainSearch").blur(function(){
+        $(".filterList").hide();
+        $(".search").css("border-bottom", "none");
     });
 
     //region CHECKBOX DROPDOWN
     $(".filterList").click(function(){
         $(".search > .dd-checkbox").toggleClass("becomeVisible");
     });
-        
+
         $(".option").click(function(){
             let $tick = $(this).find(".material-icons.tick");
             let $box = $(this).find(".option-box");
@@ -48,9 +54,9 @@ $(document).ready(function () {
 
     let $view_module = $(".viewModule .dd-checkbox");
     $(".aViewModuleDropDown").click(function(){
-        if($view_module.hasClass('open')) 
+        if($view_module.hasClass('open'))
             $view_module.removeClass('open');
-        else 
+        else
             $view_module.addClass('open');
     });
 
@@ -60,7 +66,7 @@ $(document).ready(function () {
             $view_module.removeClass('open');
         });
 
-        
+
     $(".profile-add").click(function () {
         $(".drop-add").toggleClass("show-block");
     });
