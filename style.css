@@ -111,7 +111,7 @@ a{
               border-bottom: 1px solid lightgrey;
             }
             .search:hover .filterList{
-              display: block;
+              visibility: visible;
             }
             .search:hover .searchicon{
               color: black;
@@ -127,7 +127,7 @@ a{
                 }
 
                 .material-icons.filterList{
-                    display: none;
+                    visibility: hidden;
                     align-self: center;
                     margin: 0;
                 }
