@@ -5,13 +5,16 @@ $(document).ready(function () {
         $(".search").css("border-bottom", "none");
         $(".searchicon").css("color", "#79919d");
         $(".search > .dd-checkbox").removeClass("becomeVisible");*/
-  
+
 
     $(".filter-icon").click(function(){
         $(".searchbar__dropdown").toggleClass("becomeVisible");
         console.log("the filter has been clicked");
     });
 
+    $(".profile__panel").click(function () {
+        $(".profile__add").toggleClass("show-block");
+    });
 
     //region CHECKBOX DROPDOWN
 
@@ -72,12 +75,6 @@ $(document).ready(function () {
             $(".aViewModuleDropDown > .material-icons.layoutViolet").css("color", col);
             $view_module.removeClass('open');
         });
-
-
-    $(".addClick").click(function () {
-        $(".drop-add").toggleClass("show-block");
-        console.log("focus");
-    });
 
     $(".addClick").blur(function () {
         $(".drop-add").removeClass("show-block");
