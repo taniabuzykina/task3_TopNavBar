@@ -107,6 +107,16 @@ a{
                 align-items: center;
                 margin-left: 50px;
             }
+            .search:hover .inputarea{
+              border-bottom: 1px solid lightgrey;
+            }
+            .search:hover .filterList{
+              display: block;
+            }
+            .search:hover .searchicon{
+              color: black;
+            }
+
 
                 .mainSearch{
                     border: none;
@@ -234,9 +244,14 @@ a{
                 margin-right: 50px;
             }
 
+            .profile >*{
+              margin-left: 16px;
+            }
+
                 /*ADD DROPDOWN*/
 
                 .profile-add {
+                  margin-left: 0;
                     position: relative;
                     display: flex;
                     align-items: center;
@@ -245,11 +260,9 @@ a{
                   .addClick{
                     display: inline-flex;
                   }
-                  .addClick  .material-icons{
-                    padding-right: 5px;
-                  }
+
                     .pAdd{
-                        margin: 0 15px 0 5px;
+                        margin-left: 5px;
                     }
 
                 .drop-add {
@@ -286,9 +299,16 @@ a{
                 .arrow{
                     position: relative;
                 }
+                .arrowDropdown{
+                  margin-left: -15px;
+                }
+                .arrowDropdown.avatar{
+                  margin-left: 0;
+                }
                     .arrow .dd-checkbox{
                         padding: 10px 30px 40px;
                         right: 0%;
+                        margin-right: -50px;
                     }
                     .arrowDropdownContent{
 /*                        display: inline-block;*/
