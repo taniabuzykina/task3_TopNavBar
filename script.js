@@ -1,22 +1,6 @@
 $(document).ready(function () {
 
-    $(".mainSearch").focus(function(){
-        $(".filterList").show();
-        $(".inputarea").css("border-bottom", "1px solid lightgrey");
-        $(".searchicon").css("color", "black");
-    });
 
-    function searchhide(){
-      $(".filterList").hide();
-      $(".search").css("border-bottom", "none");
-      $(".searchicon").css("color", "#79919d");
-    }
-
-
-    $(".inputarea").blur(function(){
-        console.log("not clicked");
-        searchhide();
-      });
       //$('body').on('click', '.filterList')
         /*$(".filterList").hide();
         $(".search").css("border-bottom", "none");
@@ -24,14 +8,11 @@ $(document).ready(function () {
         $(".search > .dd-checkbox").removeClass("becomeVisible");*/
 
     $(".filterList").click(function(){
-        $(".search > .dd-checkbox").toggleClass("becomeVisible");
+        $(".search > .dd-checkbox").addClass("becomeVisible");
         console.log("the filter has been clicked");
     });
 
-    $(".mainSearch").blur(function(){
-        console.log("filter has lost the focus");
-        searchhide();
-    });
+
     //region CHECKBOX DROPDOWN
 
         $(".option").click(function(){
@@ -70,16 +51,20 @@ $(document).ready(function () {
     //endregion
 
 
-    let $view_module = $(".viewModule .dd-checkbox");
+    /*let $view_module = $(".viewModule .dd-checkbox");
     $(".aViewModuleDropDown").click(function(){
         if($view_module.hasClass('open'))
             $view_module.removeClass('open');
         else
             $view_module.addClass('open');
     });
-
-    $(".aViewModuleDropDown").blur(function(){
-        $view_module.removeClass('open');
+*/
+    let $search_form = $(".viewModule .dd-checkbox");
+    $(document).click((e)=>{
+      if(!$search_form.is(e.target)&&$search_form.has(e.target).length===0){
+        console.log("blur");
+        $search_form.toggleClass('open');
+      }
     });
 
         $(".moduleMenuOption").click( function () {
