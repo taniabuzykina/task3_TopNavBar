@@ -9,41 +9,22 @@ $(document).ready(function () {
     $(".filterList").click(function(){
         $(".search > .dd-checkbox").toggleClass("becomeVisible");
     });
-    //endregion
-
-    let $view_module = $(".viewModule .dd-checkbox");
-    $(".aViewModuleDropDown").click(function(){
-        if($view_module.hasClass('open')) 
-            $view_module.removeClass('open');
-        else 
-            $view_module.addClass('open');
-    });
-
-    $(".moduleMenuOption").click( function () {
-        var col = $(this).find(".material-icons").css('color');
-        $("#abc").css("color", col);
-        $view_module.removeClass('open');
-    });
-
-    $(".option").click(function(){
-        let $tick = $(this).find(".material-icons.tick");
-        let $box = $(this).find(".option-box");
-        let $text = $(this).find("p");
-        if($tick.hasClass('checked')) {
-            $tick.removeClass('checked');
-            $box.removeClass('box-checked');
-            $text.removeClass('p-checked');
-        }
-        else {
-            $tick.addClass('checked');
-            $box.addClass('box-checked');
-            $text.addClass('p-checked');
-        }
-    });
-
-    $(".arrowDropdown").click(function(){
-        $(".arrow > .dd-checkbox").toggleClass("becomeVisible");
-    });
+        
+        $(".option").click(function(){
+            let $tick = $(this).find(".material-icons.tick");
+            let $box = $(this).find(".option-box");
+            let $text = $(this).find("p");
+            if($tick.hasClass('checked')) {
+                $tick.removeClass('checked');
+                $box.removeClass('box-checked');
+                $text.removeClass('p-checked');
+            }
+            else {
+                $tick.addClass('checked');
+                $box.addClass('box-checked');
+                $text.addClass('p-checked');
+            }
+        });
 
     function Obj(query, options) {
         this.query = query;
@@ -62,9 +43,30 @@ $(document).ready(function () {
             console.log(obj);
         }
     });
+    //endregion
 
+
+    let $view_module = $(".viewModule .dd-checkbox");
+    $(".aViewModuleDropDown").click(function(){
+        if($view_module.hasClass('open')) 
+            $view_module.removeClass('open');
+        else 
+            $view_module.addClass('open');
+    });
+
+        $(".moduleMenuOption").click( function () {
+            var col = $(this).find(".material-icons").css('color');
+            $(".aViewModuleDropDown > .material-icons.layoutViolet").css("color", col);
+            $view_module.removeClass('open');
+        });
+
+        
     $(".profile-add").click(function () {
         $(".drop-add").toggleClass("show-block");
+    });
+
+    $(".arrowDropdown").click(function(){
+        $(".arrow > .dd-checkbox").toggleClass("becomeVisible");
     });
 
 });

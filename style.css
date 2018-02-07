@@ -8,10 +8,6 @@
 .becomeBlue{
     color: #11a0f8;
 }
-/*
-.material-icons{
-    align-self: center;
-}*/
 
 body{
     margin: 0;
@@ -58,9 +54,9 @@ a{
     margin: 0 auto;
 }
 
-.headingText, .mainText{
-    color: #212e35;
-}
+    .headingText, .mainText{
+        color: #212e35;
+    }
 
     .headingText{
         font-size: 50px;
@@ -119,7 +115,7 @@ a{
                     align-self: center;
                     margin: 0;
                 }
-
+                
                 .dd-checkbox {
                     position: absolute;
                     display: none;
@@ -129,87 +125,99 @@ a{
                     top: 34px;
                     box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
                 }
-
-                /*CHECKBOX DROPDOWN*/
-
-                .option-box {
-                    display: flex;
-                    align-items: center;
-                    justify-items: center;
-                    height: 20px;
-                    width: 20px;
-                    margin-right: 10px;
-                    border: 2px solid #CFD8DC;
-                    border-radius: 3px;
-                }
-
-                .box-checked {
-                    border-color: #11A0F8;
-                    background-color: #11A0F8;
-                }
-                .material-icons.tick {
-                    display: none;
-                    color: white;
-                    font-size: 16px;
-                }
-
-                .material-icons.tick.checked {
-                    display: block;
-                }
-
-                .p-checked {
-                    color: #11A0F8;
-                }
-
                 .search .dd-checkbox{
                     left: 20%;
                 }
 
-                    .dd-checkbox .option {
-                        margin-bottom: 10px;
-                    }
-                    .option {
-                        margin-right: 15px;
+                    /*CHECKBOX DROPDOWN*/
+
+                    .option-box {
                         display: flex;
                         align-items: center;
+                        justify-items: center;
+                        height: 20px;
+                        width: 20px;
+                        margin-right: 10px;
+                        border: 2px solid #CFD8DC;
+                        border-radius: 3px;
                     }
-                    
-                        .option label {
-                            padding-left: 7px;
+
+                        .box-checked {
+                            border-color: #11A0F8;
+                            background-color: #11A0F8;
                         }
-                    
-                    .viewModule{
-                        position: relative;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                        .viewModule .dd-checkbox{
+                        .material-icons.tick {
                             display: none;
-                            text-align: left;
-                            padding: 0px;
-                            cursor: pointer;
-                            min-width: 250px;
-                            color: #263238;
+                            color: white;
+                            font-size: 16px;
                         }
 
-                        .viewModule .dd-checkbox.open{
+                        .material-icons.tick.checked {
                             display: block;
                         }
+
+                    .p-checked {
+                        color: #11A0F8;
+                    }
+
+                        .dd-checkbox .option {
+                            margin-bottom: 10px;
+                        }
+                        .option {
+                            margin-right: 15px;
+                            display: flex;
+                            align-items: center;
+                        }
                         
-                            .moduleMenuOption{
-                                text-decoration: none;
-                                display: block;
-                                padding: 15px 20px;
+                            .option label {
+                                padding-left: 7px;
                             }
-                            .moduleMenuOption:hover{
-                                background-color: rgba(244, 248, 249, 0.7);
-                            }
-                                .moduleMenuOption .material-icons{
-                                    display: inline-flex;
-                                    vertical-align: text-bottom;
-                                    padding: 0px 10px 0px 5px;
-                                }
+                    
+            .viewModule{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+                .viewModule .dd-checkbox{
+                    padding: 0px;
+                    cursor: pointer;
+                    min-width: 250px;
+                    color: #263238;
+                }
+
+                .viewModule .dd-checkbox.open{
+                    display: block;
+                }
+                
+                    .moduleMenuOption{
+                        text-decoration: none;
+                        display: block;
+                        padding: 15px 20px;
+                    }
+                    .moduleMenuOption:hover{
+                        background-color: rgba(244, 248, 249, 0.7);
+                    }
+                        .moduleMenuOption:nth-of-type(1):hover{
+                            color: #7460ee;
+                        }
+                        .moduleMenuOption:nth-of-type(2):hover{
+                            color: #11a0f8;
+                        }
+                        .moduleMenuOption:nth-of-type(3):hover{
+                            color: #ffbb44;
+                        }
+                        .moduleMenuOption:nth-of-type(4):hover{
+                            color: #f33155;
+                        }
+                        .moduleMenuOption:nth-of-type(5):hover{
+                            color: #7ace4c;
+                        }
+
+                        .moduleMenuOption .material-icons{
+                            vertical-align: middle;
+                            padding: 0px 10px 0px 5px;
+                        }
                         
             .profile{
                 display: flex;
@@ -218,21 +226,17 @@ a{
                 align-items: center;
             }
 
-                .profile a:first-of-type .material-icons{
-                    padding-right: 10px;
-                }
-                .profile a:nth-of-type(2) .material-icons{
-                    padding: 0px 15px;
-                }
-
                 /*ADD DROPDOWN*/
 
                 .profile-add {
                     position: relative;
                     display: flex;
                     align-items: center;
-                    margin-right: 10px;
+                    /*padding-right: 10px;*/
                 }
+                    .pAdd{
+                        margin: 0 15px 0 10px;
+                    }
 
                 .drop-add {
                     position: absolute;
@@ -253,6 +257,12 @@ a{
                         color: #A0DD84;
                     }
 
+                .profile a:first-of-type .material-icons{
+                    padding-right: 15px;
+                }
+                .profile a:nth-of-type(2) .material-icons{
+                    padding: 0px 15px;
+                }
 
                 .avatar{
                     background: url(Android_Wear_92x.png);
@@ -268,7 +278,7 @@ a{
                         padding-right: 40px;
                     }
                     .arrow .dd-checkbox{
-                        padding: 10px 40px 40px;
+                        padding: 10px 30px 40px;
                         right: 0%;
                     }
                     .arrowDropdownContent{
@@ -287,6 +297,10 @@ a{
                             color: #849aa5;
                         }
                         
+                        .arrowDropdownContent p{
+                            padding: 7px 0;
+                        }
+
                         .arrowDropdownContent p:nth-of-type(2), .arrowDropdownContent p:nth-of-type(4){
                             border-bottom: 1px solid #eaeeef;
                             padding: 10px 0px 15px;
@@ -303,6 +317,9 @@ a{
                             align-content: center;
                             justify-content: space-between;
                         }
+                            .arrowDownload i{
+                                align-self: center;
+                            }
 
 
 .becomeVisible {
