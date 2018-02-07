@@ -41,8 +41,9 @@ a{
 }
 
 .navbar {
+    padding: 0 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     color: #78909C;
