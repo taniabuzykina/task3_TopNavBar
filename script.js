@@ -7,6 +7,7 @@ $(document).ready(function () {
         $(".search > .dd-checkbox").removeClass("becomeVisible");*/
     $(".search-bar__input").click(function(){
         $(".search-bar__filter-icon").css("visibility", "visible");
+        $(".navbar__search-bar").css("border-bottom", "1px solid #CDD6DB");
     });
 
     $(".search-bar__filter-icon").click(function(){

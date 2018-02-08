@@ -45,7 +45,7 @@ i {
     height: 80px;
 }
 
-    .navbar__search-bar, .navbar__profile, .navbar__sections{
+    .navbar__search-bar__wrapper, .navbar__profile, .navbar__sections{
         flex: 0  0 33.333%;
     }
 
@@ -67,14 +67,11 @@ i {
         align-items: center;
         position: relative;
     }
-    
-    .navbar__search-bar{
+
+    .navbar__search-bar {
         display: flex;
         align-items: center;
-    }
-    
-    .search-bar > * {
-        margin-right: 10px;
+        width: 50%;
     }
 
         .search-bar__input {
