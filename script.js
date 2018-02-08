@@ -25,7 +25,7 @@ $(document).ready(function () {
         $(".advanced-search__option").click(function(){
             let $tick = $(this).find(".option__option-box_checked");
             let $box = $(this).find(".option__option-box");
-            let $text = $(this).find(".option__text");
+            let $text = $(this).find("p");
             if($tick.hasClass('checked')) {
                 $tick.removeClass('checked');
                 $box.removeClass('box-checked');

@@ -118,12 +118,23 @@ a{
             }
 
 
+<<<<<<< HEAD
                 .mainSearch{
                     border: none;
                     height: 30px;
                 }
                 .mainSearch:focus{
                     outline: none;
+=======
+                .option__option-box_checked {
+                    display: none;
+                    color: white;
+                    font-size: 16px;
+                }
+
+                .option__option-box_checked.checked {
+                    display: block;
+>>>>>>> parent of b3e664d... more amazingness
                 }
 
                 .material-icons.filterList{
@@ -145,6 +156,7 @@ a{
                     left: 0;
                 }
 
+<<<<<<< HEAD
                     /*CHECKBOX DROPDOWN*/
 
                     .option-box {
@@ -201,6 +213,12 @@ a{
                     cursor: pointer;
                     min-width: 250px;
                     color: #263238;
+=======
+                .advanced-search__option {
+                    margin-right: 15px;
+                    display: flex;
+                    align-items: center;
+>>>>>>> parent of b3e664d... more amazingness
                 }
 
                 .viewModule .dd-checkbox.open{
