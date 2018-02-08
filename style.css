@@ -5,14 +5,6 @@
     box-sizing: border-box;
 }
 
-.becomeVisible {
-    display: flex;
-}
-
-.becomeBlue{
-    color: #11a0f8;
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -28,6 +20,10 @@ a{
     text-decoration: none;
     border: none;
     color: inherit;
+}
+
+i {
+    cursor: pointer;
 }
 
 .container{
@@ -91,9 +87,13 @@ a{
                 color: #b2bfc6;
             }
 
+        .search-bar__filter-icon {
+            /*visibility: hidden;*/
+        }
+
         .search-bar__advanced-search {
             position: absolute;
-            display: flex;
+            display: none;
             padding: 20px;
             background-color: white;
             top: 55px;
@@ -114,13 +114,14 @@ a{
                     border-color: #11A0F8;
                     background-color: #11A0F8;
                 }
-                .material-icons.tick {
+
+                .option__option-box_checked {
                     display: none;
                     color: white;
                     font-size: 16px;
                 }
 
-                .material-icons.tick.checked {
+                .option__option-box_checked.checked {
                     display: block;
                 }
 
@@ -181,3 +182,11 @@ a{
             height: 30px;
             margin-right: 5px;
     }
+
+.becomeVisible {
+    display: flex;
+}
+
+.becomeBlue{
+    color: #11a0f8;
+}

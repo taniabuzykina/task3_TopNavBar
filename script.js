@@ -7,8 +7,8 @@ $(document).ready(function () {
         $(".search > .dd-checkbox").removeClass("becomeVisible");*/
 
 
-    $(".filter-icon").click(function(){
-        $(".searchbar__dropdown").toggleClass("becomeVisible");
+    $(".search-bar__filter-icon").click(function(){
+        $(".search-bar__advanced-search").toggleClass("becomeVisible");
         console.log("the filter has been clicked");
     });
 
@@ -19,9 +19,9 @@ $(document).ready(function () {
 
     //region CHECKBOX DROPDOWN
 
-        $(".option").click(function(){
-            let $tick = $(this).find(".material-icons.tick");
-            let $box = $(this).find(".option-box");
+        $(".advanced-search__option").click(function(){
+            let $tick = $(this).find(".option__option-box_checked");
+            let $box = $(this).find(".option__option-box");
             let $text = $(this).find("p");
             if($tick.hasClass('checked')) {
                 $tick.removeClass('checked');
