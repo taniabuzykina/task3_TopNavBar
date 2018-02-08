@@ -13,91 +13,83 @@
     <div class="container">
 
         <nav class="navbar">
-            <div class="searchbar">
-                <i class="material-icons">search</i>
-                <input class="searchbar__input" type="text" placeholder="Type in to Search..">
-                <i class="material-icons filter-icon">filter_list</i>
+            <div class="navbar__search-bar">
+                <i class="material-icons search-bar__search-icon">search</i>
+                <input class="search-bar__input" type="text" placeholder="Type in to Search..">
+                <i class="material-icons search-bar__filter-icon">filter_list</i>
 
-                <!--Checkbox bropdown-->
-                <div class="searchbar__dropdown">
-                    <div class="leftcol">
-                        <div class="option">
-                            <div class="option-box">
-                                <i class="material-icons tick">check</i>
+                <!--Checkbox dropdown-->
+                <div class="search-bar__advanced-search dropdown">
+                    <div class="advanced-search__left-col">
+                        <div class="advanced-search__option">
+                            <div class="option__option-box">
+                                <i class="material-icons option__option-box_ckecked">check</i>
                             </div>
-                            <p>All</p>
+                            <p class="option__text">All</p>
                         </div>
-                        <div class="option">
-                            <div class="option-box">
-                                <i class="material-icons tick">check</i>
+                        <div class="advanced-search__option">
+                            <div class="option__option-box">
+                                <i class="material-icons option__option-box_ckecked">check</i>
                             </div>
-                            <p>Contacts</p>
+                            <p class="option__text">Contacts</p>
                         </div>
-                        <div class="option">
-                            <div class="option-box">
-                                <i class="material-icons tick">check</i>
+                        <div class="advanced-search__option">
+                            <div class="option__option-box">
+                                <i class="material-icons option__option-box_ckecked">check</i>
                             </div>
-                            <p>Companies</p>
+                            <p class="option__text">Companies</p>
                         </div>
                     </div>
 
-                    <div class="rightcol">
-                        <div class="option">
-                            <div class="option-box">
-                                <i class="material-icons tick">check</i>
+                    <div class="advanced-searchn__right-col">
+                        <div class="advanced-search__option">
+                            <div class="option__option-box">
+                                <i class="material-icons option__option-box_ckecked">check</i>
                             </div>
-                            <p>Deals</p>
+                            <p class="option__text">Deals</p>
                         </div>
-                        <div class="option">
-                            <div class="option-box">
-                                <i class="material-icons tick">check</i>
+                        <div class="advanced-search__option">
+                            <div class="option__option-box">
+                                <i class="material-icons option__option-box_ckecked">check</i>
                             </div>
-                            <p>Documents</p>
+                            <p class="option__text">Documents</p>
                         </div>
-                        <div class="option">
-                            <div class="option-box">
-                                <i class="material-icons tick">check</i>
+                        <div class="advanced-search__option">
+                            <div class="option__option-box">
+                                <i class="material-icons option__option-box_ckecked">check</i>
                             </div>
-                            <p>Tickets</p>
+                            <p class="option__text">Tickets</p>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div class="center">
+            <div class="navbar__sections">
 
-                <div class="viewModule">
-                    <i class="material-icons layoutViolet">view_module</i>
+                <i class="material-icons sections__view-module">view_module</i>
+                <div class="sections__menu dropdown">
+                    <p class="menu__section"><i class="material-icons sections__view-module_Violet">view_module</i>Sales</p>
+                    <p class="menu__section"><i class="material-icons sections__view-module_Blue">view_module</i>Marketing</p>
+                    <p class="menu__section"><i class="material-icons sections__view-module_Orange">view_module</i>Services</p>
+                    <p class="menu__section"><i class="material-icons sections__view-module_Magenta">view_module</i>Real Estate</p>
+                    <p class="menu__section"><i class="material-icons sections__view-module_Green">view_module</i>Call Center</p>
                 </div>
-
+   
             </div>
 
 
-            <div class="profile">
+            <div class="navbar__profile">
 
-                <div class="profile__panel">
+                <div class="profile__add-options">
                     <i class="material-icons">add</i>
-                    <p class="add">Add</p>
+                    <p class="add-options__add">Add</p>
                 </div>
 
                 <i class="material-icons">timelapse</i>
-                <div class="logout">
-                    <img src="Android_Wear_92x.png" class="profile__avatar">
+                <div class="profile__user">
+                    <img src="Android_Wear_92x.png" class="user__avatar">
                     <i class="material-icons">arrow_drop_down</i>
-                </div>
-
-                <!-- ADD DROPDOWN -->
-                <div class="profile__add">
-                    <a href="#" class="add-option">Contact</a>
-                    <a href="#" class="add-option">Company</a>
-                    <a href="#" class="add-option">Deal</a>
-                    <a href="#" class="add-option">Event</a>
-                    <a href="#" class="add-option">Task</a>
-                    <a href="#" class="add-option">Note</a>
-                    <a href="#" class="add-option">Email</a>
-                    <a href="#" class="add-option">Ticket</a>
-                    <a href="#" class="add-option">Call</a>
                 </div>
 
             </div>
