@@ -168,13 +168,36 @@ i {
     }
 
     .profile__add-options {
+        margin: 0;
+        position: relative;
         display: flex;
         align-items: center;
-        margin: 0;
+        cursor: pointer;
     }
 
         .add-options__add {
             margin-left: 10px;
+        }
+
+        .profile__add-options__add {
+            position: absolute;
+            top: 50px;
+            left: -50px;
+            display: none;
+            width: 200px;
+            color: black;
+            background-color: #fff;
+            padding-bottom: 20px;
+        }
+
+        .add-option {
+            display: block;
+            padding: 10px 70px 10px 40px;
+        }
+
+        .add-option:hover {
+            background-color: #F1F9EC;
+            color: #A0DD84;
         }
 
     .profile__user {
@@ -191,6 +214,14 @@ i {
     display: flex;
 }
 
+.becomeBlock {
+    display: block;
+}
+
 .becomeBlue{
     color: #11a0f8;
+}
+
+.becomeGreen {
+    color: #7ACE4C;
 }

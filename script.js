@@ -1,10 +1,5 @@
 $(document).ready(function () {
 
-
-        /*$(".filterList").hide();
-        $(".search").css("border-bottom", "none");
-        $(".searchicon").css("color", "#79919d");
-        $(".search > .dd-checkbox").removeClass("becomeVisible");*/
     $(".search-bar__input").click(function(){
         $(".search-bar__filter-icon").css("visibility", "visible");
         $(".navbar__search-bar").css("border-bottom", "1px solid #CDD6DB");
@@ -16,10 +11,10 @@ $(document).ready(function () {
         console.log("the filter has been clicked");
     });
 
-    $(".profile__panel").click(function () {
-        $(this).toggleClass("add-selected");
-        $(".profile__add").toggleClass("show-block");
-    });
+    $('.profile__add-options').click(function () {
+        $(".profile__add-options__add").toggleClass('becomeBlock');
+        $(this).toggleClass("becomeGreen");
+    })
 
     //region CHECKBOX DROPDOWN
 
