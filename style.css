@@ -188,6 +188,7 @@ i {
             color: black;
             background-color: #fff;
             padding-bottom: 20px;
+            box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
         }
 
         .add-option {

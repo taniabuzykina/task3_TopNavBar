@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     $(".search-bar__filter-icon").click(function(){
         $(".search-bar__advanced-search").toggleClass("becomeVisible");
-        $(".search-bar__filter-icon").css("color", "#11A0F8");
+        $(".search-bar__filter-icon").toggleClass('becomeBlue');
         console.log("the filter has been clicked");
     });
 
@@ -15,6 +15,7 @@ $(document).ready(function () {
         $(".profile__add-options__add").toggleClass('becomeBlock');
         $(this).toggleClass("becomeGreen");
     })
+
 
     //region CHECKBOX DROPDOWN
 
