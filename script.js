@@ -5,10 +5,13 @@ $(document).ready(function () {
         $(".search").css("border-bottom", "none");
         $(".searchicon").css("color", "#79919d");
         $(".search > .dd-checkbox").removeClass("becomeVisible");*/
-
+    $(".search-bar__input").click(function(){
+        $(".search-bar__filter-icon").css("visibility", "visible");
+    });
 
     $(".search-bar__filter-icon").click(function(){
         $(".search-bar__advanced-search").toggleClass("becomeVisible");
+        $(".search-bar__filter-icon").css("color", "#11A0F8");
         console.log("the filter has been clicked");
     });
 
