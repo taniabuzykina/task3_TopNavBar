@@ -115,14 +115,14 @@ i {
                     background-color: #11A0F8;
                 }
 
-                .option__option-box_checked {
-                    display: none;
-                    color: white;
+                .material-icons.option__option-box_checked {
                     font-size: 16px;
+                    visibility: hidden;
+                    color: white;
                 }
 
                 .option__option-box_checked.checked {
-                    display: block;
+                    visibility: visible;
                 }
 
                 .p-checked {
@@ -137,6 +137,7 @@ i {
                     margin-right: 15px;
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
                 }
 
                 .advanced-search__option label {
