@@ -16,6 +16,10 @@ $(document).ready(function () {
         $(this).toggleClass("becomeGreen");
     })
 
+    $('.profile__user').click(function () {
+        $('.useroptions').toggleClass('becomeBlock');
+    })
+
 
     //region CHECKBOX DROPDOWN
 
