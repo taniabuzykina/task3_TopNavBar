@@ -157,9 +157,10 @@ i {
     }
 
     .menu__section{
+        cursor: pointer;
         text-decoration: none;
         display: block;
-        padding: 20px 100px 18px 35px;
+        padding: 17px 135px 17px 35px;
     }
         .menu__section:hover{
             background-color: rgba(244, 248, 249, 0.7);
