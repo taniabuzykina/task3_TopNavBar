@@ -12,12 +12,12 @@ $(document).ready(function () {
     });
 
     $('.profile__add-options').click(function () {
-        $(".profile__add-options__add").toggleClass('becomeBlock');
+        $(".add-options__add").toggleClass('becomeBlock');
         $(this).toggleClass("becomeGreen");
     })
 
     $('.profile__user').click(function () {
-        $('.useroptions').toggleClass('becomeBlock');
+        $('.user__options').toggleClass('becomeBlock');
     })
 
 
