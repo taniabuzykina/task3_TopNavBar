@@ -79,7 +79,7 @@ $(document).ready(function () {
       }
     });
 
-        $(".moduleMenuOption").click( function () {
+        $(".menu__section").click( function () {
             var col = $(this).find(".material-icons").css('color');
             $(".aViewModuleDropDown > .material-icons.layoutViolet").css("color", col);
             $view_module.removeClass('open');
