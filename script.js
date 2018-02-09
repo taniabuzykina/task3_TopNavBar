@@ -25,6 +25,12 @@ $(document).ready(function () {
     });
 
 
+    //Change center icon color
+    $(".menu__section").click( function () {
+        var col = $(this).find(".material-icons").css('color');
+        $(".sections__view-module").css("color", col);
+    });
+
     //region CHECKBOX DROPDOWN
 
         $(".advanced-search__option").click(function(){
@@ -62,15 +68,6 @@ $(document).ready(function () {
     });
     //endregion
 
-
-    /*let $view_module = $(".viewModule .dd-checkbox");
-    $(".aViewModuleDropDown").click(function(){
-        if($view_module.hasClass('open'))
-            $view_module.removeClass('open');
-        else
-            $view_module.addClass('open');
-    });
-*/
     let $search_form = $(".viewModule .dd-checkbox");
     $(document).click((e)=>{
       if(!$search_form.is(e.target)&&$search_form.has(e.target).length===0){
@@ -79,11 +76,6 @@ $(document).ready(function () {
       }
     });
 
-        $(".menu__section").click( function () {
-            var col = $(this).find(".material-icons").css('color');
-            $(".aViewModuleDropDown > .material-icons.layoutViolet").css("color", col);
-            $view_module.removeClass('open');
-        });
 
     $(".addClick").blur(function () {
         $(".drop-add").removeClass("show-block");
