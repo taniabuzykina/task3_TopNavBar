@@ -175,16 +175,16 @@ i {
         cursor: pointer;
     }
 
-        .add-options__add {
+        .add-options__add-text {
             margin-left: 10px;
         }
 
-        .profile__add-options__add {
+        .add-options__add {
             position: absolute;
             top: 50px;
             left: -50px;
             display: none;
-            width: 200px;
+            width: 220px;
             color: black;
             background-color: #fff;
             padding-bottom: 20px;
@@ -209,27 +209,27 @@ i {
             width: 30px;
             height: 30px;
             margin-right: 5px;
+            cursor: pointer;
     }
 
-
-    .useroptions{
-/*          display: inline-block;*/
-            display: flex;
-            flex-direction: column;
-            padding: 0;
-            min-width: 200px;
+        .user__options{
+            background-color: #fefefe;
+            display: none;
+            position: absolute;
+            width: 280px;
+            color: black;
+            padding: 10px 40px 40px;
+            top: 10%;
+            right: 10%;
+            box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
         }
 
-            .optionstext{
-                padding-top: 10px;
+            .options__text{
+                padding-top: 20px;
             }
 
             .textmail{
                 color: #849aa5;
-            }
-
-            .optionstext{
-                padding: 7px 0;
             }
 
             .useroptions:nth-of-type(2), .useroptions:nth-of-type(4){
