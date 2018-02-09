@@ -180,6 +180,22 @@ i {
             color: #7ace4c;
         }
 
+        .sectionsview-module_Green{
+            color: #7ace4c;
+        }
+        .sectionsview-module_Blue{
+            color: #11a0f8;
+        }
+        .sectionsview-module_Orange{
+            color: #ffbb44;
+        }
+        .sectionsview-module_Magenta{
+            color: #f33155;
+        }
+        .sections__view-module_Violet{
+            color: #7460ee;
+        }
+
         .menu__section .material-icons{
             vertical-align: middle;
             padding: 0px 10px 0px 5px;
