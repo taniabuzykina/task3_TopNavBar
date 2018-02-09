@@ -45,7 +45,7 @@ i {
     height: 80px;
 }
 
-    .navbar__search-bar__wrapper, .navbar__profile, .navbar__sections{
+    .navbar__search-wrapper, .navbar__profile, .navbar__sections{
         flex: 0  0 33.333%;
     }
 
@@ -61,17 +61,11 @@ i {
 
     /*SEARCHBAR*/
 
-    .search-bar {
-        width: 300px;
-        display: flex;
-        align-items: center;
-        position: relative;
-    }
-
     .navbar__search-bar {
+        position: relative;
         display: flex;
         align-items: center;
-        width: 50%;
+        width: 70%;
     }
 
         .search-bar__input {
@@ -91,6 +85,8 @@ i {
             }
 
         .search-bar__filter-icon {
+            position: absolute;
+            right: 0;
             visibility: hidden;
         }
 
@@ -232,7 +228,7 @@ i {
                 color: #849aa5;
             }
 
-            .useroptions:nth-of-type(2), .useroptions:nth-of-type(4){
+            .optionstext:nth-of-type(2), .optionstext:nth-of-type(4){
                 border-bottom: 1px solid #eaeeef;
                 padding: 10px 0px 15px;
             }

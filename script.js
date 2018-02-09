@@ -14,11 +14,15 @@ $(document).ready(function () {
     $('.profile__add-options').click(function () {
         $(".add-options__add").toggleClass('becomeBlock');
         $(this).toggleClass("becomeGreen");
-    })
+    });
 
     $('.profile__user').click(function () {
         $('.user__options').toggleClass('becomeBlock');
-    })
+    });
+    
+    $('.sections__view-module').click(function () {
+        $('.sections__menu').toggleClass('becomeBlock');
+    });
 
 
     //region CHECKBOX DROPDOWN
