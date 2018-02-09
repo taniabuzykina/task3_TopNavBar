@@ -91,11 +91,12 @@ i {
         }
 
         .search-bar__advanced-search {
+            width: 334px;
             position: absolute;
             display: none;
             padding: 20px;
             background-color: white;
-            top: 55px;
+            top: 56px;
             box-shadow: 5px 22px 134px -62px rgba(0,0,0,1);
         }
             .option__option-box {
