@@ -161,6 +161,7 @@ i {
         text-decoration: none;
         display: block;
         padding: 17px 135px 17px 35px;
+        color: black;
     }
         .menu__section:hover{
             background-color: rgba(244, 248, 249, 0.7);
@@ -300,11 +301,12 @@ i {
 
             .text__download{
                 display: flex;
-                align-content: center;
+                align-items: center;
                 justify-content: space-between;
+                padding-top: 20px;
             }
                 .download__arrow{
-                    align-self: center;
+                    color: #78909C;
                 }
 
 
