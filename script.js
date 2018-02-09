@@ -1,5 +1,20 @@
 $(document).ready(function () {
 
+    //Hide menus on body click
+
+    let search_form = ('.search-bar__advanced-search');
+    // let search_form = ('.search-bar__advanced-search');;
+
+    $(document).click((e) => {
+        if (!search_form.is(e.target) &&
+            $search_form.has(e.target).length==0) {
+
+            $search_form.toggleClass('becomeVisible');
+        }
+    });
+
+    // Dropdown menus
+
     $(".search-bar__input").click(function(){
         $(".search-bar__filter-icon").css("visibility", "visible");
         $(".navbar__search-bar").css("border-bottom", "1px solid #CDD6DB");
