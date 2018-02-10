@@ -5,6 +5,7 @@ $(document).ready(function () {
 
     $('.search-bar__filter-icon').click(function () {
       $search.toggle();
+        $(".search-bar__advanced-search").css('display', 'flex');
     });
 
     $(document).mouseup(function (e) {
@@ -92,7 +93,7 @@ $(document).ready(function () {
     });
 
     $(".search-bar__filter-icon").click(function(){
-        $(".search-bar__advanced-search").toggleClass("becomeVisible");
+//        $(".search-bar__advanced-search").toggleClass('becomeVisible');
         $(".search-bar__filter-icon").toggleClass('becomeBlue');
         console.log("the filter has been clicked");
     });
